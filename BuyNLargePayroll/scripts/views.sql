@@ -13,7 +13,7 @@ WHERE p.NombreObjeto = 'Empleados' AND p.Accion = 'SELECT' AND (
     (p.FiltroTipo = 'PorUsuario' AND e.UsuarioID = dbo.fn_ObtenerUsuarioID())
     OR
     (p.FiltroTipo = 'PorDepartamento' AND e.DepartamentoID = (
-       SELECT DepartamentoID FROM Departamentos WHERE UsuarioID = dbo.fn_ObtenerUsuarioID()
+       SELECT DepartamentoID FROM Empleados WHERE UsuarioID = dbo.fn_ObtenerUsuarioID()
     ))
 );
 
@@ -32,5 +32,5 @@ WHERE per.NombreObjeto = 'Pagos' AND per.Accion = 'SELECT' AND (
     OR
     (per.FiltroTipo = 'PorDepartamento' AND e.DepartamentoID = (
         SELECT DepartamentoID FROM Departamentos WHERE UsuarioID = dbo.fn_ObtenerUsuarioID()
-    ))
+      ))
 );
