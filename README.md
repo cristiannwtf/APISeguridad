@@ -91,7 +91,7 @@
 
 ## Estructura del Proyecto
 
-
+```plaintext
 APISeguridad/
 ├── api/
 │   ├── migrations/
@@ -115,8 +115,3 @@ APISeguridad/
 ├── manage.py
 ├── requirements.txt
 └── README.md
-
-
-
-Créditos
-Autor: Cristian Cubillos
