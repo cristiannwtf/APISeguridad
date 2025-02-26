@@ -92,9 +92,12 @@
 ## Estructura del Proyecto
 
 ```plaintext
-APISeguridad/
+BuyNLargePayroll/
+├── .venv/
 ├── api/
+│   ├── __pycache__/
 │   ├── migrations/
+│   │   ├── __pycache__/
 │   ├── __init__.py
 │   ├── admin.py
 │   ├── apps.py
@@ -103,6 +106,7 @@ APISeguridad/
 │   ├── urls.py
 │   └── views.py
 ├── BuyNLargePayroll/
+│   ├── __pycache__/
 │   ├── __init__.py
 │   ├── asgi.py
 │   ├── settings.py
@@ -112,6 +116,8 @@ APISeguridad/
 │   ├── create_tables.sql
 │   ├── stored_procedures.sql
 │   └── data.sql
+├── get-pip.py
 ├── manage.py
 ├── requirements.txt
-└── README.md
+├── README.md
+└── .gitignore
